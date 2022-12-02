@@ -1,0 +1,78 @@
+<!-- Stwórz dowolny przepis na potrawę, przepis musi zawierać:
+Nazwę przepisu - nagłówek, ustawić inny kolor niż czarny
+Zdjęcie wyróżniające zastosować tutaj wiedzę z zajęć(użycie srcset i sizes), oraz niech ma zaokrąglone rogi
+Lista czynności do wykonanie - lista numerowana
+Galeria zdjęć(np 3 zdjęcia z pokazaniem potrawy), przy czym niech ostatnie zdjęcie ma opacity równe 70%
+Dodać tło na cały dokument Dodatkowo:
+Dodanie font’u z Google Fonts
+Użycie skrótowej wartości font 2 razy (np. duże grube nagłówki sans-serif, np. Roboto/Lato/Open Sans) i mniejsze subtitles, bez bold, ale z kursywą i jakąś ładną czcionką pisaną -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Moje przepisy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1>Przepis na pizze</h1>
+    <img
+      src="domowa_pizza-scaled.jpg"
+      alt="zdjęcie pizzy"
+      srcset="domowa_pizza-scaled.jpg 480w, domowa_pizza-scaled.jpg 800w" 
+      sizes="(max-width: 600px) 480px,
+         800px"
+       />
+
+    <div>
+        
+          <h2 class="headingClass">Składniki</h2>
+
+      <div class="blokTekstu"> 
+        <br>1 i 1/2 szklanki mąki
+        <br>1/2 szklanki mleka
+        <br>10 g drożdży
+        <br>2 łyżki oliwy z oliwek
+        <br>1/2 łyżeczki cukru
+        <br>1/2 łyżeczki soli
+        <br>250 ml passaty pomidorowej
+        <br>przyprawy: oregano, czosnek, sól pieprz
+        </div>
+
+    </div>
+      
+
+    <div class="przepis">
+      <h2>Przepis</h2>
+      <ol>
+        <li>
+          Wymieszaj drożdże z cukrem i ciepłym mlekiem aż do rozpuszczenia.
+        </li>
+        <li>Dodaj mąkę i szczyptę soli.</li>
+        <li>Na koniec dodaj 2 łyżki oliwy i starannie wyrób ciasto.</li>
+        <li>Rozwałkuj i pozostaw do wyrośnięcia na około godzinę.</li>
+        <li>
+          Delikanie rozprowadź pasatę z przyprawami oraz dodaj ulubione
+          składniki. <br>Posyp wszystko tartym serem.
+        </li>
+        <li>Piecz w pieklarniku ok 10min, nagrzanym do 250 stopnii.</li>
+      </ol>
+    </div>
+
+    <h2><strong>SMACZNEGO!!!</strong></h2>
+
+
+
+    <div class="galeria">
+        <div><img src="wyrabianie.jpg" alt="wyrabianie pizzy"></img></div>
+        <div><img src="pizza robienie.jpg" alt="robienie pizzy"></img></div>
+        <div><img src="domowa-pizza.jpg" alt="domowa pizza" class="imgOpacity" ></img></div>
+    </div>
+  </body>
+</html>
